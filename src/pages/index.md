@@ -22,6 +22,8 @@ intro:
       text: SAJKDAJS
     - image: /img/roddy-ricch-music-video.gif
       text: SDJKASDJS
+    - image: /img/blog-index.jpg
+      text: dfafsf
   heading: DELETE
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in rhoncus
