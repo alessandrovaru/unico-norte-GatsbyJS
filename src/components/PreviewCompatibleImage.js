@@ -23,10 +23,37 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     // for Netlify CMS 
   } else if (image) {
     return (
-      <div className="featured-gif-container">
-        <img className="featured-gif" src={image.publicURL} alt={alt+'z'} />
-        <p>{text}</p>
-      </div>
+      <>
+        {window.location.href.indexOf("admin") > -1 
+        ? 
+          <>
+            <style type="text/css">
+              {`
+                #${text} {
+                  background-image: url("${image}")
+                }
+              `}
+            </style>
+            <div id={text} className="featured-gif-container">
+              <h3>{text}</h3>
+            </div>
+          </>
+        :
+          <>
+            <style type="text/css">
+              {`
+                #${text} {
+                  background-image: url("${image.publicURL}")
+                }
+              `}
+            </style>
+            <div id={text} className="featured-gif-container">
+              <h3>{text}</h3>
+            </div>
+          </>
+        }
+      </>
+      
     );
   } else {
     return null

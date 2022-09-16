@@ -63,8 +63,8 @@ $black: #080808
     font-weight: 700
     color: $unico-norte-black
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $unico-norte-black
+    box-shadow: inset 0 0 0 2px $unico-norte-black
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -114,7 +114,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033
+  background-color: #00000033
 .blog-list-item header
   display: flex
   margin-bottom: 1em
@@ -127,23 +127,21 @@ $menu-label-color: $white-ter
 
 .featured-gif-container
   border-radius: 15px
-  background: red
   position: relative
   display: flex
   justify-content: center
   align-items: center
-
-.featured-gif
-  border-radius: 15px
-  position: absolute
-  width: 100%
-  right: 0
-  left: 0
-  z-index: 1
+  height: 250px
+  cursor: pointer
 
 .featured-gif-container p
   z-index: 2
   color: white
+
+.featured-gif-container h3
+  font-size: 32px !important
+  font-weight: bold !important
+  color: white !important
   
 
 @import "~bulma"
