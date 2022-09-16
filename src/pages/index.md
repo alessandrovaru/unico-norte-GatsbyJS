@@ -20,8 +20,6 @@ intro:
   blurbs:
     - image: /img/roddy-ricch-music-video.gif
       text: SAJKDAJS
-    - image: /img/roddy-ricch-music-video.gif
-      text: SDJKASDJS
   heading: DELETE
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in rhoncus
