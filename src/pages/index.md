@@ -18,8 +18,8 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 intro:
   blurbs:
-    - image: /img/roddy-ricch-music-video.gif
-      text: SAJKDAJS
+    - image: /img/playboi-carti-sky-sky-music-video.gif
+      text: dfsfs
   heading: DELETE
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in rhoncus
