@@ -24,32 +24,36 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   } else if (image) {
     return (
       <>
-        {window.location.href.indexOf("admin") > -1 
-        ? 
+        {typeof window !== 'undefined' &&
           <>
-            <style type="text/css">
-              {`
-                #${text} {
-                  background-image: url("${image}")
-                }
-              `}
-            </style>
-            <div id={text} className="featured-gif-container">
-              <h3>{text}</h3>
-            </div>
-          </>
-        :
-          <>
-            <style type="text/css">
-              {`
-                #${text} {
-                  background-image: url("${image.publicURL}")
-                }
-              `}
-            </style>
-            <div id={text} className="featured-gif-container">
-              <h3>{text}</h3>
-            </div>
+            {window.location.href.indexOf("admin") > -1 
+            ? 
+              <>
+                <style type="text/css">
+                  {`
+                    #${text} {
+                      background-image: url("${image}")
+                    }
+                  `}
+                </style>
+                <div id={text} className="featured-gif-container">
+                  <h3>{text}</h3>
+                </div>
+              </>
+            :
+              <>
+                <style type="text/css">
+                  {`
+                    #${text} {
+                      background-image: url("${image.publicURL}")
+                    }
+                  `}
+                </style>
+                <div id={text} className="featured-gif-container">
+                  <h3>{text}</h3>
+                </div>
+              </>
+            }
           </>
         }
       </>
