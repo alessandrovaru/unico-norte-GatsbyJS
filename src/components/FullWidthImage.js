@@ -4,11 +4,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function FullWidthImage(props) {
   const {
-    height = 400,
     img,
     title,
     subheading,
-    imgPosition = "top left",
   } = props;
 
   return (
@@ -18,17 +16,17 @@ export default function FullWidthImage(props) {
         style={{
           display: "grid",
           alignItems: "center",
+          height: "100vh"
         }}
       >
         {img?.url ? (
           <img
             src={img}
             objectFit={"cover"}
-            objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              height: height,
+              height: "100%",
               width: "100%",
             }}
             // You can optionally force an aspect ratio for the generated image
@@ -41,11 +39,10 @@ export default function FullWidthImage(props) {
           <GatsbyImage
             image={img}
             objectFit={"cover"}
-            objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              maxHeight: height,
+              height: "100%",
             }}
             layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
