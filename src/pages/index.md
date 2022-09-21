@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Único Norte
+title: Único Nortew
 image: /img/la-vida-boheme-carrusel-suzie-kamikaze-24.jpg
 heading: Great coffee with a conscience
 subheading: Productora audiovisual | Conceptualización | Postproducción
