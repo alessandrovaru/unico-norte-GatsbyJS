@@ -2,25 +2,36 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper";
+
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
-        <div>
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: "100%",
-                display: "inline-block",
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
+      <>
+        <SwiperSlide key={item.text}>
+          <div>
+            <div className="has-text-centered">
+              <div
+                style={{
+                  width: "100%",
+                  display: "inline-block",
+                }}
+              >
+                <PreviewCompatibleImage imageInfo={item} />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </SwiperSlide>
+      </>
     ))}
-  </div>
+  </Swiper>
 );
 
 FeatureGrid.propTypes = {
