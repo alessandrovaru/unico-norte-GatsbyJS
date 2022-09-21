@@ -20,6 +20,8 @@ intro:
   blurbs:
     - image: /img/playboi-carti-sky-sky-music-video.gif
       text: dfsfs
+    - image: /img/roddy-ricch-music-video.gif
+      text: sadasdasd
   heading: DELETE
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in rhoncus
