@@ -7,11 +7,20 @@ $unico-norte-black-invert: #fff
 
 $primary: $unico-norte-black
 $primary-invert: $unico-norte-black-invert
-$body-color: #333
-$black: #080808
+$body-color: #1a1a1a
+$black: #030303
 
-.navbar .navbar-menu
-  box-shadow: none !important
+
+body
+  background: $body-color !important
+
+.navbar 
+  background: transparent !important
+  color: white
+  .navbar-menu
+    box-shadow: none !important
+  .navbar-item
+    color: white
 
 .content .taglist
   list-style: none
@@ -165,6 +174,23 @@ $menu-label-color: $white-ter
   -ms-flex-align: center
   -webkit-align-items: center
   align-items: center
+
+.footer-logo
+  animation: navigating 4s ease-in-out infinite
+
+@keyframes navigating 
+  0% 
+    -webkit-transform: rotate(-20deg)
+    transform: rotate(-20deg)
+  50% 
+    -webkit-transform: rotate(20deg)
+    transform: rotate(20deg)
+  100% 
+    -webkit-transform: rotate(-20deg)
+    transform: rotate(-20deg)
+  
+
+
 
 
 
