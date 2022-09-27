@@ -12,7 +12,7 @@ title: Único Nortew
 subtitle: Great coffee with a conscience
 firstImage:
   title: Nublado
-  subtitle: Yarge ft. Suei
+  subtitle: Yarge ft. Sueis
   linkYoutube: https://www.youtube.com/watch?v=TY0FMPZBWHM&ab_channel=Yarge
   linkSpotify: https://open.spotify.com/track/5l9D9Uzeba8H3vVbEEoWnd
   image: /img/blog-index.jpg
