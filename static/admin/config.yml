@@ -47,87 +47,118 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - {
+              label: Mainpitch,
+              name: mainpitch,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - { label: Description, name: description, widget: string }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Porfolio,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - { label: Title, name: title1, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
           - {
-              label: First Image,
-              name: firstImage,
+              label: Porfolio 1,
+              name: porfolio1,
               widget: object,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
                   { label: Title, name: title, widget: string },
                   { label: Subtitle, name: subtitle, widget: string },
-                  { label: Link-youtube, name: linkYoutube, widget: text },
-                  { label: Link-spotify, name: linkSpotify, widget: text },
+                  { label: YoutubeURL, name: youtubeurl, widget: string },
+                  { label: SpotifyURL, name: spotifyurl, widget: string},
+                  { label: Image, name: image, widget: image }
                 ],
-            }
+          }
           - {
-              label: Second Image,
-              name: SecondImage,
-              widget: object,
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Title, name: title, widget: string },
-                  { label: Subtitle, name: subtitle, widget: string },
-                  { label: Link-youtube, name: linkYoutube, widget: text },
-                  { label: Link-spotify, name: linkSpotify, widget: text },
-                ],
-            }
-
-          - {
-            label: Third Image,
-            name: thirdImage,
+            label: Porfolio 2,
+            name: porfolio2,
             widget: object,
             fields:
               [
-                { label: Image, name: image, widget: image },
                 { label: Title, name: title, widget: string },
                 { label: Subtitle, name: subtitle, widget: string },
-                { label: Link-youtube, name: linkYoutube, widget: text },
-                { label: Link-spotify, name: linkSpotify, widget: text },
+                { label: YoutubeURL, name: youtubeurl, widget: string },
+                { label: SpotifyURL, name: spotifyurl, widget: string},
+                { label: Image, name: image, widget: image }
               ],
           }
           - {
-            label: Fourth Image,
-            name: fourthImage,
+            label: Porfolio 3,
+            name: porfolio3,
             widget: object,
             fields:
               [
-                { label: Image, name: image, widget: image },
                 { label: Title, name: title, widget: string },
                 { label: Subtitle, name: subtitle, widget: string },
-                { label: Link-youtube, name: linkYoutube, widget: text },
-                { label: Link-spotify, name: linkSpotify, widget: text },
+                { label: YoutubeURL, name: youtubeurl, widget: string },
+                { label: SpotifyURL, name: spotifyurl, widget: string},
+                { label: Image, name: image, widget: image }
               ],
           }
           - {
-            label: Fifth Image,
-            name: fifthImage,
+            label: Porfolio 4,
+            name: porfolio4,
             widget: object,
             fields:
               [
-                { label: Image, name: image, widget: image },
                 { label: Title, name: title, widget: string },
                 { label: Subtitle, name: subtitle, widget: string },
-                { label: Link-youtube, name: linkYoutube, widget: text },
-                { label: Link-spotify, name: linkSpotify, widget: text },
+                { label: YoutubeURL, name: youtubeurl, widget: string },
+                { label: SpotifyURL, name: spotifyurl, widget: string},
+                { label: Image, name: image, widget: image }
               ],
           }
           - {
-            label: Sixth Image,
-            name: sixthImage,
+            label: Porfolio 5,
+            name: porfolio5,
             widget: object,
             fields:
               [
-                { label: Image, name: image, widget: image },
                 { label: Title, name: title, widget: string },
                 { label: Subtitle, name: subtitle, widget: string },
-                { label: Link-youtube, name: linkYoutube, widget: text },
-                { label: Link-spotify, name: linkSpotify, widget: text },
+                { label: YoutubeURL, name: youtubeurl, widget: string },
+                { label: SpotifyURL, name: spotifyurl, widget: string},
+                { label: Image, name: image, widget: image }
               ],
           }
-          
+          - {
+            label: Porfolio 6,
+            name: porfolio6,
+            widget: object,
+            fields:
+              [
+                { label: Title, name: title, widget: string },
+                { label: Subtitle, name: subtitle, widget: string },
+                { label: YoutubeURL, name: youtubeurl, widget: string },
+                { label: SpotifyURL, name: spotifyurl, widget: string},
+                { label: Image, name: image, widget: image }
+              ],
+          }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
