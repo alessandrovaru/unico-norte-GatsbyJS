@@ -68,8 +68,11 @@ thirdImage:
   subtitle: Yarge ft. Suei
   title: Nublado
   image: /img/blog-index.jpg
-title1: asdadsasada
-subtitle: Great coffee with a conscience
+title1: "| Conceptualización | Producción | Postproducción |"
+subtitle: UNICONORTE es una productora establecida en la ciudad de Caracas
+  Venezuela integrada por  Lorem ipsum dolor sit amet, consectetur adipiscing
+  elit. Nullam sodales eros ut dui consectetur viverra. Nullam dignissim
+  vehicula efficitur. Morbi tincidunt mauris eu mauris hendrer
 main:
   heading: Great coffee with no compromises
   description: >
@@ -87,29 +90,29 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 porfolio1:
-  title: afafafa
-  subtitle: afafafaafaf
-  youtubeurl: affafaafaf
-  spotifyurl: affafaaffaaf
-  image: /img/chemex.jpg
+  title: Nublado
+  subtitle: Yarge ft. Suei
+  youtubeurl: https://www.youtube.com/watch?v=TY0FMPZBWHM&ab_channel=Yarge
+  spotifyurl: https://open.spotify.com/track/5l9D9Uzeba8H3vVbEEoWnd
+  image: /img/308672193_175537458340137_291755176686371964_n-1-.jpg
 porfolio2:
-  title: sdasda
-  subtitle: asdasds
-  youtubeurl: asdasdas
+  title: Suerte
+  subtitle: Bella Ferro
+  youtubeurl: https://www.youtube.com/watch?v=9_fAZmQ5YLA&ab_channel=BellaFerro
   spotifyurl: asdasdsa
-  image: /img/chemex.jpg
+  image: /img/280546164_1110964833161267_3579065199935997158_n.jpg
 porfolio3:
-  title: asdsadsa
-  subtitle: asdasd
+  title: "Más de ti "
+  subtitle: Yarge
   youtubeurl: asdas
   spotifyurl: asdadaads
-  image: /img/flavor_wheel.jpg
+  image: /img/278045700_1130511567492811_1526438828322301275_n.webp
 porfolio4:
-  title: asdsads
-  subtitle: asdad
+  title: Serotonina
+  subtitle: Daniela Barranco
   youtubeurl: asdas
   spotifyurl: asdsada
-  image: /img/blog-index.jpg
+  image: /img/271288342_478712103677171_8167162690571679217_n.jpg
 porfolio5:
   title: asdadsa
   subtitle: asdada
