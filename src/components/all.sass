@@ -1,5 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+@import 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap'
 // Config vars
 // Único Norte logo brand color: #080808
 $unico-norte-black: #080808
@@ -7,12 +8,25 @@ $unico-norte-black-invert: #fff
 
 $primary: $unico-norte-black
 $primary-invert: $unico-norte-black-invert
-$body-color: #1a1a1a
+$body-color: #0e0e0e
 $black: #030303
+
+$small: 768px
+$medium: 900px
 
 
 body
   background: $body-color !important
+  font-family: 'Nunito Sans' !important
+  overflow: hidden !important
+  h1,h2,h3,h4,h5
+    text-transform: uppercase
+    font-weight: 700 !important
+    @media screen and (max-width: $small) 
+      font-size: 20px !important
+  p
+  @media screen and (max-width: $small) 
+    font-size: 12px !important
 
 .navbar 
   background: transparent !important
@@ -209,3 +223,11 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+
+
+
+  
+
+
+
+
