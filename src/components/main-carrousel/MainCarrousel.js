@@ -109,27 +109,27 @@ const MainCarrousel = ({
                       </div>
                     </div> 
                     <div className="scene-container">
-                         {typeof window !== 'undefined' && 
+                      {typeof window !== 'undefined' && 
+                      <>
+                        {window.location.href.indexOf("admin") > -1 
+                        ? 
                           <>
-                            {window.location.href.indexOf("admin") > -1 
-                            ? 
-                              <>
-                                <div className="simplePlane">
-                                  <img
-                                    src={porfolio2.image}
-                                    data-sampler="simplePlaneTexture"
-                                    alt=""
-                                    className="first"
-                                  />
-                                </div>
-                              </>
-                            :
-                              <>
-                                <Scene image={porfolio2}/>
-                              </>
-                            }
+                            <div className="simplePlane">
+                              <img
+                                src={porfolio2.image}
+                                data-sampler="simplePlaneTexture"
+                                alt=""
+                                className="first"
+                              />
+                            </div>
                           </>
-                         }
+                        :
+                          <>
+                            <Scene image={porfolio2}/>
+                          </>
+                        }
+                      </>
+                      }
                     </div>
                 </div>
               </div>
@@ -144,23 +144,27 @@ const MainCarrousel = ({
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="scene-container">
-                      {window.location.href.indexOf("admin") > -1 
-                        ? 
+                        {typeof window !== 'undefined' && 
                           <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio3.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
+                          {window.location.href.indexOf("admin") > -1 
+                          ? 
+                            <>
+                              <div className="simplePlane">
+                                <img
+                                  src={porfolio3.image}
+                                  data-sampler="simplePlaneTexture"
+                                  alt=""
+                                  className="first"
+                                />
+                              </div>
+                            </>
+                          :
+                            <>
+                              <Scene image={porfolio3}/>
+                            </>
+                          }
                           </>
-                        :
-                          <>
-                            <Scene image={porfolio3}/>
-                          </>
-                        }
+                        }              
                     </div>
                     <div className="text-container">
                       <h2>{porfolio3.title}</h2>
@@ -187,23 +191,27 @@ const MainCarrousel = ({
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="scene-container">
-                      {window.location.href.indexOf("admin") > -1 
-                        ? 
-                          <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio4.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
-                          </>
-                        :
-                          <>
-                            <Scene image={porfolio4}/>
-                          </>
-                        }
+                      {typeof window !== 'undefined' && 
+                        <>
+                          {window.location.href.indexOf("admin") > -1 
+                          ? 
+                            <>
+                              <div className="simplePlane">
+                                <img
+                                  src={porfolio4.image}
+                                  data-sampler="simplePlaneTexture"
+                                  alt=""
+                                  className="first"
+                                />
+                              </div>
+                            </>
+                          :
+                            <>
+                              <Scene image={porfolio4}/>
+                            </>
+                          }
+                        </>
+                      }
                     </div>
                     <div className="text-container">
                       <h2>{porfolio4.title}</h2>
@@ -242,23 +250,27 @@ const MainCarrousel = ({
                       </div>
                     </div> 
                     <div className="scene-container">
-                      {window.location.href.indexOf("admin") > -1 
-                        ? 
-                          <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio5.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
-                          </>
-                        :
-                          <>
-                            <Scene image={porfolio5}/>
-                          </>
-                        }
+                      {typeof window !== 'undefined' && 
+                        <>
+                          {window.location.href.indexOf("admin") > -1 
+                          ? 
+                            <>
+                              <div className="simplePlane">
+                                <img
+                                  src={porfolio5.image}
+                                  data-sampler="simplePlaneTexture"
+                                  alt=""
+                                  className="first"
+                                />
+                              </div>
+                            </>
+                          :
+                            <>
+                              <Scene image={porfolio5}/>
+                            </>
+                          }
+                        </>
+                      }
                     </div>
                 </div>
               </div>
@@ -284,24 +296,28 @@ const MainCarrousel = ({
                         </Link>
                       </div>
                     </div> 
-                    <div className="scene-container">
-                      {window.location.href.indexOf("admin") > -1 
-                        ? 
-                          <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio6.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
-                          </>
-                        :
-                          <>
-                            <Scene image={porfolio6}/>
-                          </>
-                        }
+                    <div className="scene-container">                      
+                      {typeof window !== 'undefined' && 
+                        <>
+                          {window.location.href.indexOf("admin") > -1 
+                          ? 
+                            <>
+                              <div className="simplePlane">
+                                <img
+                                  src={porfolio6.image}
+                                  data-sampler="simplePlaneTexture"
+                                  alt=""
+                                  className="first"
+                                />
+                              </div>
+                            </>
+                          :
+                            <>
+                              <Scene image={porfolio6}/>
+                            </>
+                          }
+                        </>
+                      }
                     </div>
                 </div>
               </div>
@@ -316,24 +332,28 @@ const MainCarrousel = ({
                       data-sampler="simplePlaneTexture"
                     /> */}
                     
-                    <div className="scene-container">
-                      {window.location.href.indexOf("admin") > -1 
-                        ? 
-                          <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio6.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
-                          </>
-                        :
-                          <>
-                            <Scene image={porfolio6}/>
-                          </>
-                        }
+                    <div className="scene-container">                      
+                      {typeof window !== 'undefined' && 
+                        <>
+                          {window.location.href.indexOf("admin") > -1 
+                          ? 
+                            <>
+                              <div className="simplePlane">
+                                <img
+                                  src={porfolio6.image}
+                                  data-sampler="simplePlaneTexture"
+                                  alt=""
+                                  className="first"
+                                />
+                              </div>
+                            </>
+                          :
+                            <>
+                              <Scene image={porfolio6}/>
+                            </>
+                          }
+                        </>
+                      }
                     </div> 
                     <div className="text-container">
                       <h2>{porfolio6.title}</h2>
