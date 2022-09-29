@@ -12,6 +12,14 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
+  porfolio1,
+  porfolio2,
+  porfolio3,
+  porfolio4,
+  porfolio5,
+  porfolio6,
+  title1,
+  subtitle,
   title,
   heading,
   subheading,
@@ -23,7 +31,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div className="index-carrousel">
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -32,7 +40,7 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="title">{mainpitch.heading}</h1>
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
@@ -45,10 +53,9 @@ export const IndexPageTemplate = ({
                       </h3>
                       <p>{description}</p>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <MainCarrousel/> */}
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
+                  {/* <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
                         Ver más proyectos...
@@ -71,8 +78,17 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
-      {/* <MainCarrousel/> */}
+      </section> */}
+      <MainCarrousel
+        porfolio1={porfolio1}
+        porfolio2={porfolio2}
+        porfolio3={porfolio3}
+        porfolio4={porfolio4}
+        porfolio5={porfolio5}
+        porfolio6={porfolio6}
+        title1={title1}
+        subtitle={subtitle}
+      />
     </div>
   );
 };
@@ -87,6 +103,14 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  porfolio1: PropTypes.object,
+  porfolio2: PropTypes.object,
+  porfolio3: PropTypes.object,
+  porfolio4: PropTypes.object,
+  porfolio5: PropTypes.object,
+  porfolio6: PropTypes.object,
+  title1: PropTypes.string,
+  subtitle: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -102,6 +126,14 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        title1={frontmatter.title1}
+        subtitle={frontmatter.subtitle}
+        porfolio1={frontmatter.porfolio1}
+        porfolio2={frontmatter.porfolio2}
+        porfolio3={frontmatter.porfolio3}
+        porfolio4={frontmatter.porfolio4}
+        porfolio5={frontmatter.porfolio5}
+        porfolio6={frontmatter.porfolio6}
       />
     </Layout>
   );
@@ -126,7 +158,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
-        } 
+        }
         heading
         subheading
         mainpitch {
@@ -141,7 +173,7 @@ export const pageQuery = graphql`
                 fluid(maxWidth: 500, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
-              } 
+              }
               publicURL
             }
             text
@@ -149,6 +181,80 @@ export const pageQuery = graphql`
           heading
           description
         }
+        porfolio1 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        porfolio2 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        porfolio3 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        porfolio4 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        porfolio5 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        porfolio6 {
+          title
+          subtitle
+          youtubeurl
+          spotifyurl
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
+            publicURL
+          }
+        }
+        title1
+        subtitle
       }
     }
   }

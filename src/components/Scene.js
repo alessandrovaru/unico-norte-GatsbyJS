@@ -4,11 +4,11 @@ import { Curtains } from "react-curtains";
 import SimplePlane from './BasicPlane';
 
 
-const Scene = () => {
+const Scene = ({image}) => {
 
   return (
     <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
-      <SimplePlane/>      
+      <SimplePlane image={image}/>      
     </Curtains>
   )
 }

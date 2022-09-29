@@ -4,7 +4,7 @@ import { FaYoutube, FaSpotify } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap'
 
 import Scene from '../Scene.js'
-import VideoScene from '../VideoScene.js'
+// import VideoScene from '../VideoScene.js'
 
 import logo from "../../img/white-logo.png";
 
@@ -14,16 +14,19 @@ import logo from "../../img/white-logo.png";
 // Import Swiper styles
 import 'swiper/css';
 import './styles.sass'
+import { Link } from "gatsby";
 
 
-const MainCarrousel = ({firstImage,
-  secondImage,
-  thirdImage,
-  fourthImage,
-  fifthImage,
-  sixthImage,
-  title,
-  subtitle}) => {
+const MainCarrousel = ({
+  title1,
+  subtitle,
+  porfolio1, 
+  porfolio2,
+  porfolio3,
+  porfolio4,
+  porfolio5,
+  porfolio6}) => {
+  
   return (
     <>
       <div className='main-carrousel'>
@@ -37,7 +40,8 @@ const MainCarrousel = ({firstImage,
                     style={{ width: "14em"}}
                     className="main-logo"
                   />
-                  <p>UNICONORTE es una productora audiovisual establecida en Caracas, Venezuela. </p>
+                  <h1>{title1}</h1>
+                  <p>{subtitle}</p>
                 </div>
               </Col>
             </Row>
@@ -55,7 +59,7 @@ const MainCarrousel = ({firstImage,
                         <>
                           <div className="simplePlane">
                             <img
-                              src="https://unsplash.it/1920/1080?random=1"
+                              src={porfolio1.image}
                               data-sampler="simplePlaneTexture"
                               alt=""
                               className="first"
@@ -64,16 +68,20 @@ const MainCarrousel = ({firstImage,
                         </>
                       :
                         <>
-                          <Scene/>
+                          <Scene image={porfolio1} />
                         </>
                       }
                     </div>
                     <div className="text-container">
-                      <h2>{firstImage.title}</h2>
-                      <h3>{firstImage.subtitle}</h3>
+                      <h2>{porfolio1.title}</h2>
+                      <h3>{porfolio1.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio1.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio1.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div>
                 </div>
@@ -89,11 +97,15 @@ const MainCarrousel = ({firstImage,
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="text-container">
-                      <h2>{secondImage.title}</h2>
-                      <h3>{secondImage.subtitle}</h3>
+                      <h2>{porfolio2.title}</h2>
+                      <h3>{porfolio2.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio2.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio2.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div> 
                     <div className="scene-container">
@@ -102,7 +114,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio2.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -111,7 +123,7 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio2}/>
                           </>
                         }
                     </div>
@@ -133,7 +145,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio3.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -142,16 +154,20 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio3}/>
                           </>
                         }
                     </div>
                     <div className="text-container">
-                      <h2>{thirdImage.title}</h2>
-                      <h3>{thirdImage.subtitle}</h3>
+                      <h2>{porfolio3.title}</h2>
+                      <h3>{porfolio3.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio3.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio3.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div> 
                 </div>
@@ -172,7 +188,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio4.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -181,16 +197,20 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio4}/>
                           </>
                         }
                     </div>
                     <div className="text-container">
-                      <h2>{fourthImage.title}</h2>
-                      <h3>{fourthImage.subtitle}</h3>
+                      <h2>{porfolio4.title}</h2>
+                      <h3>{porfolio4.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio4.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio4.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div> 
                 </div>
@@ -206,11 +226,15 @@ const MainCarrousel = ({firstImage,
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="text-container">
-                      <h2>{fifthImage.title}</h2>
-                      <h3>{fifthImage.subtitle}</h3>
+                      <h2>{porfolio5.title}</h2>
+                      <h3>{porfolio5.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio5.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio5.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div> 
                     <div className="scene-container">
@@ -219,7 +243,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio5.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -228,7 +252,7 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio5}/>
                           </>
                         }
                     </div>
@@ -245,11 +269,15 @@ const MainCarrousel = ({firstImage,
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="text-container">
-                      <h2>{sixthImage.title}</h2>
-                      <h3>{sixthImage.subtitle}</h3>
+                      <h2>{porfolio6.title}</h2>
+                      <h3>{porfolio6.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio6.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio6.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div> 
                     <div className="scene-container">
@@ -258,7 +286,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio6.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -267,7 +295,7 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio6}/>
                           </>
                         }
                     </div>
@@ -290,7 +318,7 @@ const MainCarrousel = ({firstImage,
                           <>
                             <div className="simplePlane">
                               <img
-                                src="https://unsplash.it/1920/1080?random=1"
+                                src={porfolio6.image}
                                 data-sampler="simplePlaneTexture"
                                 alt=""
                                 className="first"
@@ -299,16 +327,20 @@ const MainCarrousel = ({firstImage,
                           </>
                         :
                           <>
-                            <Scene/>
+                            <Scene image={porfolio6}/>
                           </>
                         }
                     </div> 
                     <div className="text-container">
-                      <h2>TITLE</h2>
-                      <h3>Project Name</h3>
+                      <h2>{porfolio6.title}</h2>
+                      <h3>{porfolio6.subtitle}</h3>
                       <div className="icons-container">
-                        <FaYoutube/>
-                        <FaSpotify/>
+                        <Link to={porfolio6.youtubeurl}>
+                          <FaYoutube/>
+                        </Link>
+                        <Link to={porfolio6.youtubeurl}>
+                          <FaSpotify/>
+                        </Link>
                       </div>
                     </div>
                 </div>

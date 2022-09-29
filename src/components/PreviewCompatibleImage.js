@@ -37,7 +37,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
                   `}
                 </style>
                 <div id={text} className="featured-gif-container">
-                  <h3>{text}</h3>
+                  <h3>{text}sdf</h3>
                 </div>
               </>
             :

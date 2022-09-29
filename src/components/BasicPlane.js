@@ -5,11 +5,13 @@ import { vertexShader, fragmentShader } from "./shaders/shaders";
 
 import "./basic-plane.sass";
 
-function SimplePlane() {
+function SimplePlane({image}) {
   const [plane, setPlane] = useState(null);
 
   const mousePosition = useRef(new Vec2());
   const mouseLastPosition = useRef(new Vec2());
+
+  console.log(image+'sadsadsasd')
 
   const deltas = useRef({
     max: 0,
@@ -150,7 +152,7 @@ function SimplePlane() {
       onAfterResize={onAfterResize}
     >
       <img
-        src="https://unsplash.it/1920/1080?random=1"
+        src={image.image.publicURL}
         data-sampler="simplePlaneTexture"
         alt=""
         className="first"

@@ -6,6 +6,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
+    console.log(getAsset(data.porfolio1.image))
     return (
       <IndexPageTemplate
         image={getAsset(data.image)}
@@ -15,6 +16,17 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         description={data.description}
         intro={data.intro || { blurbs: [] }}
         mainpitch={data.mainpitch || {}}
+        porfolio1={{
+          title: data.porfolio1.title,
+          subtitle: data.porfolio1.subtitle,
+          image: getAsset(data.porfolio1.image)}}
+        porfolio2={data.porfolio2 || {}}
+        porfolio3={data.porfolio3 || {}}
+        porfolio4={data.porfolio4 || {}}
+        porfolio5={data.porfolio5 || {}}
+        porfolio6={data.porfolio6 || {}}
+        title1={data.title1}
+        subtitle={data.subtitle}
       />
     )
   } else {
