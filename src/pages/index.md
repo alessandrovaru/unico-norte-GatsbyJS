@@ -91,7 +91,7 @@ porfolio1:
   subtitle: afafafaafaf
   youtubeurl: affafaafaf
   spotifyurl: affafaaffaaf
-  image: /img/blog-index.jpg
+  image: /img/chemex.jpg
 porfolio2:
   title: sdasda
   subtitle: asdasds
