@@ -2,6 +2,7 @@ import React from "react";
 
 import { FaYoutube, FaSpotify } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Scene from '../Scene.js'
 // import VideoScene from '../VideoScene.js'
@@ -34,8 +35,8 @@ const MainCarrousel = ({
           <Row>
               <Col>
                 <div className="main content has-text-centered">
-                  <img
-                    src={logo}
+                  <GatsbyImage
+                    image={logo}
                     alt="Unico Norte"
                     style={{ width: "14em"}}
                     className="main-logo"
@@ -56,23 +57,14 @@ const MainCarrousel = ({
                     <div className="scene-container">
                       {typeof window !== 'undefined' && 
                         <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio1.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio1} />
-                            </>
-                          }
+                          <div className="simplePlane">
+                            <GatsbyImage
+                              image={porfolio1.image.childImageSharp.gatsbyImageData}
+                              data-sampler="simplePlaneTexture"
+                              alt=""
+                              className="first"
+                            />
+                          </div>
                         </>
                       }
                     </div>
@@ -97,7 +89,7 @@ const MainCarrousel = ({
               <div className="main-gif-2">
                 <div> 
                   {/* <video
-                      src="https://storage.coverr.co/videos/SqATu9FFa3sMU8DgnrKVu01TfN8rEZgaE?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjAzODg4MDUyfQ.8tcbQ9WM8G5SSt4iUy0MYhSswnJ-l2M5BKGftJVsN6k"
+                      image="https://storage.coverr.co/videos/SqATu9FFa3sMU8DgnrKVu01TfN8rEZgaE?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjAzODg4MDUyfQ.8tcbQ9WM8G5SSt4iUy0MYhSswnJ-l2M5BKGftJVsN6k"
                       data-sampler="simplePlaneTexture"
                     /> */}
                     <div className="text-container">
@@ -115,23 +107,14 @@ const MainCarrousel = ({
                     <div className="scene-container">
                       {typeof window !== 'undefined' && 
                       <>
-                        {window.location.href.indexOf("admin") > -1 
-                        ? 
-                          <>
-                            <div className="simplePlane">
-                              <img
-                                src={porfolio2.image}
-                                data-sampler="simplePlaneTexture"
-                                alt=""
-                                className="first"
-                              />
-                            </div>
-                          </>
-                        :
-                          <>
-                            <Scene image={porfolio2}/>
-                          </>
-                        }
+                        <div className="simplePlane">
+                          <GatsbyImage
+                            image={porfolio2.image.childImageSharp.gatsbyImageData}
+                            data-sampler="simplePlaneTexture"
+                            alt=""
+                            className="first"
+                          />
+                        </div>
                       </>
                       }
                     </div>
@@ -150,23 +133,14 @@ const MainCarrousel = ({
                     <div className="scene-container">
                         {typeof window !== 'undefined' && 
                           <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio3.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio3}/>
-                            </>
-                          }
+                            <div className="simplePlane">
+                              <GatsbyImage
+                                image={porfolio3.image}
+                                data-sampler="simplePlaneTexture"
+                                alt=""
+                                className="first"
+                              />
+                            </div>
                           </>
                         }              
                     </div>
@@ -197,23 +171,14 @@ const MainCarrousel = ({
                     <div className="scene-container">
                       {typeof window !== 'undefined' && 
                         <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio4.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio4}/>
-                            </>
-                          }
+                          <div className="simplePlane">
+                            <GatsbyImage
+                              image={porfolio4.image.childImageSharp.gatsbyImageData}
+                              data-sampler="simplePlaneTexture"
+                              alt=""
+                              className="first"
+                            />
+                          </div>
                         </>
                       }
                     </div>
@@ -256,23 +221,14 @@ const MainCarrousel = ({
                     <div className="scene-container">
                       {typeof window !== 'undefined' && 
                         <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio5.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio5}/>
-                            </>
-                          }
+                          <div className="simplePlane">
+                              <GatsbyImage
+                                image={porfolio5.image.childImageSharp.gatsbyImageData}
+                                data-sampler="simplePlaneTexture"
+                                alt=""
+                                className="first"
+                              />
+                            </div>
                         </>
                       }
                     </div>
@@ -303,23 +259,14 @@ const MainCarrousel = ({
                     <div className="scene-container">                      
                       {typeof window !== 'undefined' && 
                         <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio6.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio6}/>
-                            </>
-                          }
+                         <div className="simplePlane">
+                            <GatsbyImage
+                              image={porfolio6.image.childImageSharp.gatsbyImageData}
+                              data-sampler="simplePlaneTexture"
+                              alt=""
+                              className="first"
+                            />
+                          </div>
                         </>
                       }
                     </div>
@@ -339,23 +286,14 @@ const MainCarrousel = ({
                     <div className="scene-container">                      
                       {typeof window !== 'undefined' && 
                         <>
-                          {window.location.href.indexOf("admin") > -1 
-                          ? 
-                            <>
-                              <div className="simplePlane">
-                                <img
-                                  src={porfolio6.image}
-                                  data-sampler="simplePlaneTexture"
-                                  alt=""
-                                  className="first"
-                                />
-                              </div>
-                            </>
-                          :
-                            <>
-                              <Scene image={porfolio6}/>
-                            </>
-                          }
+                          <div className="simplePlane">
+                            <GatsbyImage
+                              image={porfolio6.image.childImageSharp.gatsbyImageData}
+                              data-sampler="simplePlaneTexture"
+                              alt=""
+                              className="first"
+                            />
+                          </div>
                         </>
                       }
                     </div> 
