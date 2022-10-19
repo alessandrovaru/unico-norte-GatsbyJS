@@ -4,9 +4,6 @@ import { FaYoutube, FaSpotify } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap'
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import Scene from '../Scene.js'
-// import VideoScene from '../VideoScene.js'
-
 import logo from "../../img/white-logo.png";
 
 
